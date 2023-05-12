@@ -1,0 +1,18 @@
+.Dictionary {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Dictionary h1 {
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.Dictionary form {
+  margin: 30px auto;
+}
+
+.Dictionary input[type="submit"] {
+  margin-left: 10px;
+}
