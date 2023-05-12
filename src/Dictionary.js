@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
+import SearchResults from "./SearchResults";
 
 export default function SearchEngine() {
   const [keyword, setKeyword] = useState("");
+  const [result, setResult] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    setResult(response.data[0]);
   }
 
   function search(event) {
@@ -20,6 +22,7 @@ export default function SearchEngine() {
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
+
   return (
     <div className="Dictionary">
       <h1>Dictionary</h1>
@@ -33,6 +36,7 @@ export default function SearchEngine() {
         />
         <input type="submit" value="Search" />
       </form>
+      <SearchResults results={result} />
     </div>
   );
 }
