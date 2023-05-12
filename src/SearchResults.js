@@ -3,7 +3,6 @@ import Meaning from "./Meaning";
 import "./SearchResults.css";
 
 export default function SearchResults(props) {
-  console.log(props.results);
   if (props.results) {
     return (
       <div className="Results text-start">
