@@ -6,10 +6,14 @@ a {
   color: #f8a26d;
 }
 .App footer {
-  font-family: monospace, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
+
+.App footer a {
+  font-weight: bold;
+}
+
 .App .container {
   max-width: 900px;
 }
