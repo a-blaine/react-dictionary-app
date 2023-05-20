@@ -9,7 +9,6 @@ export default function SearchResults(props) {
       <div className="Results text-start">
         <section>
           <h2>{props.results.word} </h2>
-          <hr />
           {props.results.phonetics.map((phonetic, index) => {
             return (
               <div key={index}>

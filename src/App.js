@@ -6,7 +6,7 @@ function App() {
     <div className="App mt-5">
       <div className="container">
         <main>
-          <Dictionary defaultKeyword="introspection" />
+          <Dictionary defaultKeyword="youth" />
         </main>
         <footer className="m-3 text-center">
           Coded by Ashley Blaine,{" "}

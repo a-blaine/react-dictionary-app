@@ -1,0 +1,13 @@
+.Meaning h3 {
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.Meaning .definition-wrapper {
+  margin-bottom: 40px;
+}
+
+.Meaning .definition {
+  line-height: 1.5;
+}

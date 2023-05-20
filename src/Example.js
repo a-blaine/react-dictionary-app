@@ -1,12 +1,9 @@
 import React from "react";
+import "./Example.css";
 
 export default function Example({ example }) {
   if (example) {
-    return (
-      <span>
-        Example: <em>{example}</em>
-      </span>
-    );
+    return <div className="Example">{example}</div>;
   } else {
     return null;
   }
