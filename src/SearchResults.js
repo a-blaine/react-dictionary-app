@@ -7,22 +7,22 @@ export default function SearchResults(props) {
   if (props.results) {
     return (
       <div className="Results text-start">
-        <h2>{props.results.word} </h2>
-
-        {props.results.phonetics.map((phonetic, index) => {
-          return (
-            <div key={index}>
-              <Phonetics phonetics={phonetic} />
-            </div>
-          );
-        })}
-        <hr />
-
+        <section>
+          <h2>{props.results.word} </h2>
+          <hr />
+          {props.results.phonetics.map((phonetic, index) => {
+            return (
+              <div key={index}>
+                <Phonetics phonetics={phonetic} />
+              </div>
+            );
+          })}
+        </section>
         {props.results.meanings.map((meaning, index) => {
           return (
-            <div key={index}>
+            <section key={index}>
               <Meaning data={meaning} />
-            </div>
+            </section>
           );
         })}
       </div>

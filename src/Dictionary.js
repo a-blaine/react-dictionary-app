@@ -26,16 +26,20 @@ export default function SearchEngine() {
   return (
     <div className="Dictionary">
       <h1>Dictionary</h1>
-      <form onSubmit={search}>
-        <input
-          type="search"
-          placeholder="Type a word"
-          autoFocus="off"
-          autoComplete="off"
-          onChange={handleKeywordChange}
-        />
-        <input type="submit" value="Search" />
-      </form>
+      <section>
+        <form onSubmit={search}>
+          <input
+            type="search"
+            placeholder="Type a word"
+            autoFocus="off"
+            autoComplete="off"
+            onChange={handleKeywordChange}
+          />
+        </form>
+        <div className="hint">
+          suggested words: potato, act, goose, forest...
+        </div>
+      </section>
       <SearchResults results={result} />
     </div>
   );
