@@ -1,4 +1,5 @@
 import React from "react";
+import "./Photos.css";
 
 export default function Photos({ photos, keyword }) {
   if (photos) {
@@ -7,12 +8,14 @@ export default function Photos({ photos, keyword }) {
         <div className="row">
           {photos.map((photo, index) => {
             return (
-              <div className="col-3" key={index}>
-                <img
-                  src={photo.src.landscape}
-                  alt={keyword}
-                  className="img-fluid"
-                />
+              <div className="col-4" key={index}>
+                <a href={photo.url} target="_blank" rel="noreferrer">
+                  <img
+                    src={photo.src.landscape}
+                    alt={keyword}
+                    className="img-fluid"
+                  />
+                </a>
               </div>
             );
           })}
