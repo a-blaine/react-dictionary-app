@@ -10,6 +10,12 @@
   font-size: 48px;
 }
 
+.Dictionary h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .Dictionary form {
   margin: 10px auto;
 }
