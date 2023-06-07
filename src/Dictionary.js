@@ -69,12 +69,17 @@ export default function Dictionary({ defaultKeyword }) {
   } else {
     load();
     return (
-      <BarLoader
-        color="#f8a26d"
-        size={50}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
+      <div className="d-flex">
+        <div className="sync-loader">
+          <BarLoader
+            color="#f8a26d"
+            loading={true}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      </div>
     );
   }
 }
